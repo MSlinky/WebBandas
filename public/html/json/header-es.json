@@ -1,7 +1,12 @@
 {
   "header":
   [
-    
+    "<a href='/es/Nosotros'>Nosotros</a>",
+    [
+    	"Bandas",
+    	"<a href='/es/Bandas/BandaGallinaza'>Banda de gallinaza</a>",
+    	"<a href='/es/Bandas/BandaHuevo'>Banda de huevo</a>"
+    ]
   ],
   "footer":
   [
