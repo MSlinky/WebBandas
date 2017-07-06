@@ -2,7 +2,20 @@ var menuActivado=false;
 var altura = 69;
 
 function contentHeaderFooter(data){
-	console.log(data);
+	let cadena = '';
+	console.log("sdfguhkdjfuisjfo");
+	for (var i = 0; i < data['header'].length; i++) {
+		if(data['header'][i].isArray()){
+			cadena += '<li class="litopn effectTransition"><div class="submenuMovile">'+data['header'][i][0]+'</div><ul class="effectTransition">';
+			for (var j = 1; j < data['header'][i].length; j++) {
+				cadena += '<li>'+data['header'][i][j]+'</li>';
+			};
+			cadena += '</ul></li>';
+		}else{
+			cadena += '<li class="litopn effectTransition">'+data['header'][i]+"</li>";
+		}
+	};
+	$('#nav').html(cadena);
 }
 
 function menuFixed(){
