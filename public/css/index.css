@@ -1,0 +1,597 @@
+/*Index*/
+    .logoCentralcontainer{
+        text-align: center;
+        padding-top: 30vh;
+        /*padding-top: 150px;*/
+    }
+    .logoCentralcontainer img{
+        max-width: 595px;
+        width: 80%;
+    }
+	
+	/*textoSection*/
+	    .textoSection{
+			font-family: Phenomena-Regular;
+		}
+
+		.textoSection h3{
+			display: inline-block;
+			padding-right: 15%;
+			margin-bottom: 20px;
+			font-size: 3.5em;
+			border-bottom: solid #527d97 1px;
+			font-weight: bold;
+		}
+
+		.textoSection h4{
+			font-size: 2em;
+			margin-bottom: 50px;
+		}
+
+		.textoSection p{
+			font-size: 1.4em;
+			margin-bottom: 20px;
+		}
+
+		.textoSection li{
+			font-size: 1.4em;
+		}
+
+		@media only screen and (max-width: 768px){
+			.textoSection h3{
+				font-size: 2em;
+			}
+
+			.textoSection h4{
+				font-size: 1.5em;
+			}
+
+			.textoSection p{
+				font-size: 1.3em;
+			}
+		}
+	/*textoSection*/
+
+	/*distribucion*/
+	    .distribucion{
+	    	padding: 40px;
+	    	text-align: center;
+	    	background-image: url(/public/imgs/marcaDeAgua.png);
+	        background-repeat: no-repeat;
+	        background-position: bottom left;
+	    }
+	    .distribucionWhite{
+	    	background-image: none !important;
+	    }
+
+	    .distribucion > div{
+	    	vertical-align: middle;
+	    	display: inline-block;
+	    	width: 50%;
+	    }
+
+	    .distribucion40_60 .textoSection{
+			width: 45%;
+	    }
+
+	    .distribucion40_60 .imagenBanderas{
+			width: 55%;
+	    }
+
+	    .distribucion40_60 .imagenBanderas img{
+	    	width: 90%;
+		}
+
+	    .distribucion .textoSection{
+	    	text-align: left;
+	    	color: #527d97;
+	    }
+
+	    .imagenBanderas{
+			text-align: right;
+		}
+	    .imagenBanderas img{
+	    	width: 90%;
+	    }
+		
+		#distribucionBanderas{
+			height: 600px;
+		}
+		#banderas{
+			position: relative;
+		}
+		#banderas img{
+			position: absolute;
+			top: -150px;
+			left: 0;
+		}
+		#banderaFondo{
+			webkit-transition: all .3s;
+			-moz-transition: all .3s;
+			-ms-transition: all .3s;
+			-o-transition: all .3s;
+			transition: all .3s;
+			top: -148px !important;
+			left: 1px !important;
+			opacity: 0;
+		}
+		#banderas:hover #banderaFondo{
+			opacity: 1;
+		}
+
+	    @media only screen and (max-width: 768px){
+	    	#distribucionBanderas{
+				height: 700px;
+			}
+
+	    	.distribucion > div{
+		    	display: block;
+		    	width: 100%;
+		    }
+
+			.imagenBanderas img{
+		    	max-width: 80%;
+		    }
+
+		    .distribucion40_60 .textoSection{
+				width: 100%;
+		    }
+
+		    .distribucion40_60 .imagenBanderas{
+				width: 100%;
+		    }
+
+		    #banderas{
+				position: absolute;
+			}
+
+			#banderas img{
+				position: absolute;
+				top: 0px;
+				left: 0;
+			}
+
+			#banderaFondo{
+				top: 1px !important;
+				left: 1px !important;
+				opacity: 0;
+			}
+	    }
+    /*distribucion*/
+
+    /*empresa*/
+	    .empresa{
+	    	padding: 120px 44px;
+	    	background-image: url(/public/imgs/oficina.png);
+	        background-repeat: no-repeat;
+	        background-position: center left;
+	        background-size: cover;
+	    }
+
+	    .empresa .textoSection{
+			text-align: right;
+	    	color: white;
+	    	width: 50%;
+	    	margin-left: auto;
+	    	margin-right: 0;
+	    }
+
+	    .empresa .textoSection h3{
+	    	padding-right: 0;
+			padding-left: 30%;
+			border-bottom: solid white 1px;
+		}
+
+		 @media only screen and (max-width: 768px){
+		 	.empresa{
+		    	padding: 50px;
+		    }
+	    	.empresa .textoSection{
+		    	display: block;
+		    	width: 100%;
+		    }
+
+			.imagenBanderas img{
+		    	max-width: 80%;
+		    }
+	    }
+    /*empresa*/
+/*Index*/
+
+
+.banner{
+	height: 436px;
+	/*background-image: url(/public/imgs/banners/portada_nosotros.jpg);*/
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+    
+}
+.banner .textBanner{
+	font-family: Phenomena-Thin;
+	text-transform: uppercase;
+	font-size: 4.5em;
+	position: relative;
+	top: 200px;
+	color: white;
+	text-shadow: 0px 2px 5px rgba(0,0,0,1);
+}
+
+.textoSection > div{
+	display: inline-block;
+	width: 50%;
+}
+
+.textoSection ul { 
+   list-style-type: disc;
+   margin-left: 20px;
+}
+
+.textoSectionMedio{
+	display: block !important;
+	text-align: left !important;
+}
+
+.textoSectionCompleto{
+	width: 100% !important;
+}
+
+.imagenBanderasMedio{
+	text-align: left;
+	width: 100% !important;
+}
+
+.imagenBanderasMedio > div{
+	margin: 50px 0;
+}
+.imagenBanderasMedio div > div{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+.fichaTecnica img{
+	width: 120px;
+	margin: 20px;
+}
+
+@media only screen and (max-width: 768px){
+	.banner .textBanner{
+		font-family: Phenomena-Thin;
+		text-transform: uppercase;
+		font-size: 3em;
+		position: relative;
+		top: 100px;
+		color: white;
+		text-shadow: 0px 2px 5px rgba(0,0,0,1);
+	}
+
+	.imagenBanderasMedio div > div {
+		width: auto;
+	}
+}
+
+/*News*/
+	.fondoNone{
+		background-image: none;
+	}
+	.contentNota{
+		width: 75% !important;
+		display: block;
+		text-align: justify;
+	}
+	.nota{
+		margin: 50px 0;
+	}
+	.imgNew a img{
+		border-radius: 5px;
+		width: 100%;
+	}
+	.titeNew a{
+		font-weight: bold;
+		font-size: 1.5em;
+		margin: 5px 0;
+		text-decoration: none;
+		color: black;
+		cursor: pointer;
+	}
+	.dateNew{
+		color: #9C9288;
+		margin: 10px;
+	}
+	.textNew{
+		font-size: 1.2em;
+	}
+
+	.titeNew a:hover{
+		color: #527D97;
+		cursor: pointer;
+	}
+	.imgNew a img:hover{
+		opacity: .7;
+		cursor: pointer;
+	}
+
+
+	.content{
+		text-align: center;
+		margin: 20px auto;
+	}
+
+	.titeNewNota{
+		text-align: center;
+		font-size: 2em;
+		margin: auto;
+		width: 50%;
+	}
+
+	.textNewNota *{
+		font-size: 1.3em;
+		line-height: 1.5 !important;
+	}
+
+	.textNewNota p{
+		margin-bottom: 10px;
+	}
+
+	.textNewNota h1{
+		font-size: 1.5em;
+		letter-spacing: 2px;
+		margin: 5px;
+		font-weight: bold;
+	}
+
+	.textNewNota h2{
+		color: #c3512f;
+		margin: 5px;
+	}
+
+	#formularioComenario{
+		display: none;
+		width: 75% !important;
+		padding: 20px 40px;
+		background-color: rgba(82, 125, 151, .6);
+	}
+	.comentario{
+		font-size: 1.2em;
+		text-align: justify;
+		padding: 25px 0;
+		border-bottom: solid gray 2px;
+	}
+	.comentario .dateNew{
+		color: black;
+		text-align: right;
+	}
+
+	@media only screen and (max-width: 768px){
+		.contentNota{
+			width: 100% !important;
+		}
+		.titeNewNota {
+			width: 100%;
+		}
+		.imgNewNota img{
+			width: 100%;
+		}
+		#formularioComenario{
+			width: 100% !important ;
+			padding: 10px 10px;
+		}
+	}
+/*News*/
+
+/*Condiciones*/
+	.textoSectionCompleto{
+		width: 100%;
+	}
+	.center{
+		display: block !important;
+		padding: 0 !important;
+		text-align: center;
+		border-bottom: none !important;
+	}
+	.thing{
+		font-weight: normal !important;
+		font-size: 3.5em !important;
+	}
+	.icoHuevo{
+		display: block !important;
+		margin: 10px auto;
+		width: 65% !important;
+		font-size: 1.5em;
+		padding: 5px 35px;
+		background-image: url(/public/imgs/Huevo_azul.png);
+		background-size: 30px;
+	    background-repeat: no-repeat;
+	    background-position: top left;
+	}
+	.fichaTecnicaCondiciones{
+		float: right  !important;
+		position: relative !important;
+		bottom: 100px !important;
+		text-align: right;
+
+	}
+/*Condiciones*/
+
+/*Formulario*/
+	.contacto div{
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	.contacto .formulario{
+		width: 40%;
+	}
+	.contacto .mapa{
+		width: 60%;
+		padding-left: 50px;
+	}
+	.divMap iframe{
+		width: 100%;
+	}
+	#comentarios{
+		font-family: Phenomena-Regular;
+		width: 100%;
+		text-align: left;
+	}
+
+	#comentarios *{
+		font-size: 1.2em;
+		margin: 5px 0 ;
+		padding: 5px;
+		width: 100%;
+		color: #527d97;
+	}
+
+	.efectSombra{
+		border: 1px solid #dcdcdc;
+		padding: 4px 5px 5px;
+		margin-left: 0px;
+		margin-right: 0px;
+
+		-webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        transition: all .5s ease;
+	}
+
+	.efectSombra:focus{
+		background: #fff;
+		border: 1px solid #dcdcdc;
+		box-shadow: none;
+		border-radius: 0;
+		padding: 4px 5px 5px;
+		margin-right: 0px;
+		border-color: rgba(82, 168, 236, 0.8);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
+	}
+
+	textarea{
+	    resize: none;
+	    height: 150px;
+	}
+
+	.boton{
+		cursor: pointer;
+		font-family: Phenomena-Regular;
+		width: auto !important;
+		padding: 5px;
+		border-radius: 5px;
+		background-color: #527d97;
+		border: none;
+		color: white !important;
+	}
+	span.boton{
+		font-size: 1.5em;
+		margin: 10%;
+	}
+	#mensaje{
+		background-color: green;
+		padding: 0;
+		border: 0;
+	}
+	#mensaje_error{
+		background-color: rgba(255, 0, 0, .6);
+		color: black;
+		padding: 0;
+		border: 0;
+		text-align: center;
+	}
+	@media only screen and (max-width: 768px){
+		.contacto div{
+			display: block;
+			width: 100% !important;
+			margin-top: 50px;
+			padding: 0 !important;
+		}
+	}
+/*Formulario*/
+
+/*Footer*/
+	footer{
+		background-color: #527d97;
+		padding: 10px;
+		color: white;
+		font-family: Phenomena-Regular;
+	}
+	.icoHuevoWhite{
+		padding: 5px 0 5px 25px;
+	    background-size: 25px;
+	    width: 100% !important;
+	}
+	.Footer-content-justify{
+		width: 100%;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.Footer-content-justify h2{
+		font-size: 2em;
+		display: inline-block;
+		margin-bottom: 15px;
+		padding-right: 50px;
+		padding-bottom: 10px;
+		border-bottom: solid white 1px;
+		margin-left: 30px;
+	}
+	.Footer-content-justify .info div{
+		font-size: 1.2em;
+		margin: 3px 0;
+		padding-left: 30px;
+	}
+	.Footer-content-justify a{
+		display: block;
+		color: white;
+	}
+	
+	.location{
+		background-image: url(/public/Icons/icono_ubicacion2.png);
+	    background-repeat: no-repeat;
+	    background-position: center left;
+	    background-size: 20px;
+	}
+	.phone{
+		background-image: url(/public/Icons/icono_tel2.png);
+	    background-repeat: no-repeat;
+	    background-position: center left;
+	    background-size: 20px;
+	}
+	.celphone{
+		background-image: url(/public/Icons/icono_celular2.png);
+	    background-repeat: no-repeat;
+	    background-position: center left;
+	    background-size: 20px;
+	}
+	.fax{
+		background-image: url(/public/Icons/icono_fax2.png);
+	    background-repeat: no-repeat;
+	    background-position: center left;
+	    background-size: 20px;
+	}
+	@media only screen and (min-width: 768px){
+		.Footer-img-justify{
+			width: 100%;
+			display: flex;
+		}
+		.Footer-img-justify .Footer-img-justify{
+			display: inline-block;
+			padding: 20px 30px;
+		}
+		.Footer-content-justify > div{
+			box-sizing:border-box; 
+			-moz-box-sizing:border-box; /* Firefox */ 
+			-webkit-box-sizing:border-box; /* Safari */
+			display: inline-block;
+			width: 20%;
+			border-top: none;
+			text-align: left;
+		}
+		.Footer-content-justify div:last-child{
+			border-right: none;
+		}
+	}
+/*Foote: ;r
