@@ -514,6 +514,9 @@
 		color: white;
 		font-family: Phenomena-Regular;
 	}
+	footer .Logoo img{
+		width: 218px;
+	}
 	.icoHuevoWhite{
 		padding: 5px 0 5px 25px;
 	    background-size: 25px;

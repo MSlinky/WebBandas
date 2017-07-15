@@ -1,6 +1,16 @@
 function contHeaderFooter(){
 	ObjUrl.loadFile('/public/html/json/header-'+localStorage.getItem('Lan')+'.json', function(data){
 		contentHeaderFooter(data);
+
+		$('#'+localStorage.getItem('Lan')).addClass('lan-active');
+
+		$('.lan').click((event) => { 
+			if(event.target.id != localStorage.getItem('Lan')){
+				ObjUrl.changeLan(event.target.id, function(){
+					loadContent();
+				});
+			}
+		});
 	});
 }
 
@@ -19,15 +29,7 @@ function loadContent(){
 }
 
 function main(){
-	$('#'+localStorage.getItem('Lan')).addClass('lan-active');
 	
-	$('.lan').click((event) => { 
-		if(event.target.id != localStorage.getItem('Lan')){
-			ObjUrl.changeLan(event.target.id, function(){
-				loadContent();
-			});
-		}
-	});
 
 	loadContent();
 	window.onpopstate = function(){

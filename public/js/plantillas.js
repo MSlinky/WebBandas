@@ -1,4 +1,5 @@
 function info(url){
+	console.log(url)
 	if(url[1] == "Nosotros"){
 		$('.textBanner').html("La mejor tecnología europea");
 		$('.banner').css({

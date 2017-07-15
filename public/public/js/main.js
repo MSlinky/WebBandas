@@ -3,8 +3,6 @@ var altura = 69;
 
 function contentHeaderFooter(data){
 	let cadena = '';
-	$('.Logoo').html(data["Logo"]);
-
 	for (var i = 0; i < data['header'].length; i++) {
 		if(Array.isArray(data['header'][i])){
 			cadena += '<li class="litopn effectTransition"><div class="submenuMovile">'+data['header'][i][0]+'</div><ul class="effectTransition">';
@@ -16,19 +14,7 @@ function contentHeaderFooter(data){
 			cadena += '<li class="litopn effectTransition">'+data['header'][i]+"</li>";
 		}
 	};
-	cadena+= '<li class="effectTransition"><span id="es" class="lan">ES</span><span id="en" class="lan">EN</span></li>'
-
 	$('#nav').html(cadena);
-
-	
-	for (var i = 0; i < data['footer'].length; i++) {
-		cadena = '';
-		for (var j = 0; j < data['footer'][i].length; j++) {
-			cadena += data['footer'][i][j];
-		};
-		$('#footer-'+i).html(cadena);
-	};
-	
 }
 
 function menuFixed(){

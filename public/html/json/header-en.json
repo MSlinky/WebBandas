@@ -1,14 +1,45 @@
 {
-  "textSection":
+  "Logo": "<img class='fotoLogo effectTransition' src = '/public/imgs/logoInglesHF.png'/>",
+  "header":
   [
-    {
-      "text": " <h3>DISTRIBUTION</h3><h4>World-class innovation</h4><p>All of our products are made in Spain with the highest quality European technology and complying with the most demanding quality regulations and seals.</p><p>To provide a distribution throughout the Americas in 24 hours, we have warehouses in Spain and Guadalajara (Mexico).</p>"
-    },
-    {
-      "text": " <h3>COMPANY</h3><h4>We are world leaders</h4><p>BANDAS AVÍCOLAS S.A. Of C.V. Is an International company that belongs to IMA, Industrias Metálicas Agrícolas, which was founded in 1999 in Pamplona Spain, Company dedicated to offer a comprehensive service for the agricultural exploitation, personalized technical advice, sales, correct operation and monitoring thereof..</p>"
-    },
-    {
-      "text": " <h3>OUR PRODUCTS</h3><br><br><br><p> We use raw materials of the highest quality and virgin 100% to guarantee the performance of our bands in the most extreme conditions. We met the specifications of the most demanding cage makers.</p><p>Made with UV filters to avoid early crystallization. Our machinery guarantees stability and uniformity in the product so that the behavior of the bands working is constant.</p><p>Made with UV filters to avoid early crystallization. Our machinery guarantees stability and uniformity in the product so that the behavior of the bands working is constant. </p>"
-    }
+    "<a href='/es/Nosotros'>About Us</a>",
+    [
+    	"Bands",
+    	"<a href='/en/Bandas/BandaGallinaza'>Poultry Belts</a>",
+    	"<a href='/en/Bandas/BandaHuevo'>Egg Band</a>",
+      "<a href='/en/Bandas/DeflectorGallinaza'>Poultry Deflector </a>",
+      "<a href='/en/Bandas/BandaElevadoraGallinaza'>Poultry Lift Cross Band</a>",
+      "<a href='/en/Bandas/SoldadorUltrasonido'>Ultrasound Welder</a>"
+    ],
+    [
+      "Warranties and Conditions",
+      "<a href='/en/GarantiasCondiciones/Huevo'>Egg Band</a>",
+      "<a href='/en/GarantiasCondiciones/Gallinaza'>Poultry Belt</a>"
+    ],
+    "<a href='/en/Contacto'>Contact us</a>",
+    "<a href='/en/Blog'>Blog</a>"
+  ],
+  "footer":
+  [
+    [
+      "<a href='/Nosotros'><div class='litopn icoHuevoWhite'>About us</div></a>",
+       "<a href='/Bandas/BandaGallinaza'><div class='litopn icoHuevoWhite'>Bands</div></a>",
+       "<a href='/GarantiasCondiciones/Huevo'><div class='litopn icoHuevoWhite'>Warranties and Conditions</div></a>",
+       "<a href='/Contacto'><div class='litopn icoHuevoWhite'>Contact us</div></a>"
+    ],
+    [
+        "<h2>Mexico</h2>",
+        "<div>Calle Mirlo 1180, Colonia Morelos</div>",
+        "<div class='ico location'>C.P. 44910, Guadalajara (Jalisco)</div>",
+        "<div class='ico phone'><a href='tel:+523338112692'>+52 33 38 11 26 92</a></div>",
+        "<div class='ico celphone'><a href='tel:+5213319715972'>+521 33 19 71 59 72</a></div>"
+    ],
+    [
+        "<h2>Spain</h2>",
+        "<div>Pol. Industrial Comarca II, C/F, 12</div>",
+        "<div class='ico location'>C.P. 31191, Barbatáin (Navarra)</div>",
+        "<div class='ico phone'><a href='tel:+34948184117'>+34 948 18 41 17</a></div>",
+        "<div class='ico fax'><a href='tel:+34948184668'>+34 948 18 46 68</a></div>"
+    ]
   ]
 }

@@ -1,15 +1,45 @@
 {
+  "Logo": "<img class='fotoLogo effectTransition' src = '/public/imgs/logo.png'/>",
   "header":
   [
     "<a href='/es/Nosotros'>Nosotros</a>",
     [
     	"Bandas",
     	"<a href='/es/Bandas/BandaGallinaza'>Banda de gallinaza</a>",
-    	"<a href='/es/Bandas/BandaHuevo'>Banda de huevo</a>"
-    ]
+    	"<a href='/es/Bandas/BandaHuevo'>Banda de huevo</a>",
+      "<a href='/es/Bandas/DeflectorGallinaza'>Deflector de gallinaza</a>",
+      "<a href='/es/Bandas/BandaElevadoraGallinaza'>Banda transversal elevadora de gallinaza</a>",
+      "<a href='/es/Bandas/SoldadorUltrasonido'>Soldador de ultrasonido</a>"
+    ],
+    [
+      "Garantias y Condiciones",
+      "<a href='/es/GarantiasCondiciones/Huevo'>Banda de huevo</a>",
+      "<a href='/es/GarantiasCondiciones/Gallinaza'>Banda de gallinaza</a>"
+    ],
+    "<a href='/es/Contacto'>Contacto</a>",
+    "<a href='/es/Blog'>Blog</a>"
   ],
   "footer":
   [
-    
+    [
+       "<a href='/Nosotros'><div class='litopn icoHuevoWhite'>Nosotros</div></a>",
+       "<a href='/Bandas/BandaGallinaza'><div class='litopn icoHuevoWhite'>Bandas</div></a>",
+       "<a href='/GarantiasCondiciones/Huevo'><div class='litopn icoHuevoWhite'>Garantías y Condiciones</div></a>",
+       "<a href='/Contacto'><div class='litopn icoHuevoWhite'>Contacto</div></a>"
+    ],
+    [
+        "<h2>México</h2>",
+        "<div>Calle Mirlo 1180, Colonia Morelos</div>",
+        "<div class='ico location'>C.P. 44910, Guadalajara (Jalisco)</div>",
+        "<div class='ico phone'><a href='tel:+523338112692'>+52 33 38 11 26 92</a></div>",
+        "<div class='ico celphone'><a href='tel:+5213319715972'>+521 33 19 71 59 72</a></div>"
+    ],
+    [
+        "<h2>España</h2>",
+        "<div>Pol. Industrial Comarca II, C/F, 12</div>",
+        "<div class='ico location'>C.P. 31191, Barbatáin (Navarra)</div>",
+        "<div class='ico phone'><a href='tel:+34948184117'>+34 948 18 41 17</a></div>",
+        "<div class='ico fax'><a href='tel:+34948184668'>+34 948 18 46 68</a></div>"
+    ]
   ]
 }

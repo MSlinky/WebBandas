@@ -2,10 +2,54 @@ var mexicoMap = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m
 var spain = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33139.2656163936!2d-1.6857941027984913!3d42.76456307887342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5091f1d7d0b7b7%3A0x9d887953ee1f6592!2sPol.+Ind.+Comarca+II-F%2C+12%2C+31191+Barbat%C3%A1in%2C+Navarra%2C+Espa%C3%B1a!5e0!3m2!1ses-419!2smx!4v1496831982817" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
 
 function info(url){
-	if(url =="/Contacto"){
+	if('/'+url[1] =="/Contacto"){
 		$('.textBanner').html("Contáctanos");
 		$('.banner').css({
 			"background-image": "url(/public/imgs/banners/Portada_contacto.jpg)"
+		});
+	}
+}
+
+function content (data){
+	if(ObjUrl.getUrl()[0] == 'es'){
+		let content = '';
+			content +='<div class="textoSection textoSectionCompleto">'+
+	        	'<center><h4>Envíanos tus mensajes </h4><center>'+
+	        '</div>'+
+
+	        '<div class="formulario">'+
+	        	'<form id="comentarios">'+
+					'<div id="mensaje"></div>'+
+					'<div id="mensaje_error"></div>'+
+					'<label >Nombre</label>'+
+					'<input class="efectSombra" name="nombre" type="text">'+
+					'<label >Correo</label>'+
+					'<input class="efectSombra" name="correo" id="correo" type="text">'+
+					'<label >Asunto</label>'+
+					'<input class="efectSombra" name="asunto" type="text">'+
+					'<label >Mensaje</label>'+
+					'<textarea class="efectSombra" name="comentario"></textarea>'+
+					'<center><input name="accion" class="boton" type="submit" value="Enviar"></center>'+
+				'</form>'+
+	        '</div><div class="mapa">'+
+
+	        	'<div><span class="map boton">México</span><span class="map boton">España</span></div>'+
+				'<br>'+
+				'<br>'+
+				'<div class="divMap">'+
+					
+				'</div>'+
+	        '</div>';
+	    $('#contacto').html(content);
+
+	    $('.divMap').html(mexicoMap);
+
+	    $('.map').click((event)=>{
+			if($(event.target)[0]['textContent'] == "México"){
+				$('.divMap').html(mexicoMap);
+			}else{
+				$('.divMap').html(spain);
+			}
 		});
 	}
 }
@@ -28,17 +72,7 @@ function enviar_ajax(datos,link){
 }
 
 $( document ).ready(function() {
-	info(window.location.pathname);
-
-	$('.divMap').html(mexicoMap);
-
-	$('.map').click((event)=>{
-		if($(event.target)[0]['textContent'] == "México"){
-			$('.divMap').html(mexicoMap);
-		}else{
-			$('.divMap').html(spain);
-		}
-	});
+	info(ObjUrl.getUrl());	
 
 	$('#comentarios').submit((event)=>{
 		event.preventDefault();
