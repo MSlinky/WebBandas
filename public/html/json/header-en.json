@@ -2,7 +2,7 @@
   "Logo": "<img class='fotoLogo effectTransition' src = '/public/imgs/logoInglesHF.png'/>",
   "header":
   [
-    "<a href='/es/Nosotros'>About Us</a>",
+    "<a href='/en/Nosotros'>About Us</a>",
     [
     	"Bands",
     	"<a href='/en/Bandas/BandaGallinaza'>Poultry Belts</a>",
