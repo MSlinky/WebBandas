@@ -51,6 +51,8 @@ function content (data){
 				$('.divMap').html(spain);
 			}
 		});
+	}else{
+		
 	}
 }
 
